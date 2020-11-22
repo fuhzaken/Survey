@@ -1,0 +1,43 @@
+<!--
+    Author: Kenneth Agustin
+    Team: Team Seven
+    Course: COMP229 - Fall 2020
+    Purpose: Team Project - Survey Site  
+-->
+  <!-- Main Navigation goes here -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <<img src="" alt="">
+      <a class="navbar-brand" href="/">Team Se7en</a>
+      <!-- Ham Burger when the user is on a smaller device such as phone, tablets, and other small devices -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Image for Project Team Se7en -->
+      <a href="/"><img href="/" src="/Assets/images/project7.png" alt="projectseven" height="60" width="60"/></a>
+      <!-- Image for Team Se7en Logo -->
+      
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ml-auto">
+
+          <!-- Nav for Home Page -->
+          <% if (title == "Home") { %>
+            <li class="nav-item active">
+          <% } else { %>
+            <li class="nav-item">
+          <% } %>
+            <a class="nav-link" href="/home"><i class="fas fa-lg fa-laptop-house"></i> Home </a>
+          </li>
+
+          <!-- Nav for Survey List Page -->
+          <% if (title == "Survey List") { %>
+            <li class="nav-item active">
+          <% } else { %>
+            <li class="nav-item ">
+          <% } %>
+            <a class="nav-link" href="/survey-list"><i class="fas fa-lg fa-poll-h"></i> Survey List </a>
+          </li>
+          
+      </div>
+    </nav>
